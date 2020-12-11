@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+    <title>Chat Box</title>
+</head>
+<body>
+	<section class="msger">
+  <header class="msger-header">
+    <!--<div class="msger-header-title">-->
+    	<span style="font-size: 30px">Chat Box</span>
+    	<img src="chat.png" id="chat" width="40px" height="37px">
+    	<!--<input type="text" name="text" id="blank" style="width :27%; height:2.5rem;">-->
+    	<img src="audio.png" id="audio" width="35px" height="30px">
+    	<img src="video.png" id="video" width="35px" height="30px">
+    	<img src="more.png" class="dropbtn" id="more"width="35px" height="30px">
+		<img src="scroll.jpg" id="scroll" width="35px" height="30px">
+  </header>
+  <main class="msger-chat">
+  	<div class="msg right-msg">
+  		<br>
+  		<ul id="texts" class="msg-text">
+  		</ul>
+  	</div>
+  	<p id="page-bottom"></p>
+
+  </main>
+    <div class="msger-inputarea">
+    	<img src="emo.png" width="37px" height="40px" style="background-color: #fff";>
+      <textarea id="typeText" class="bottom txt" name="text" placeholder="Type messages" rows="1"
+      cols="52"></textarea>
+      <img src="gallery.png" width="35px" height="40px" style="background-color: #fff";>
+      <img src="file.png" width="35px" height="40px" style="background-color: #fff";>
+       <img src="voice.png" width="35px" height="40px" style="background-color: #fff";>
+    <button type="submit" class="msger-send-btn" id="button" onclick="sendText()">Send</button>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+	</html>
